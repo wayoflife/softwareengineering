@@ -8,7 +8,9 @@
 \contentsline {section}{\numberline {2}Overall Description}{2}
 \contentsline {subsection}{\numberline {2.1}Use-Case Model Survey}{3}
 \contentsline {subsection}{\numberline {2.2}Assumptions and Dependencies}{3}
-\contentsline {section}{\numberline {3}Specific Requirements}{3}
-\contentsline {subsection}{\numberline {3.1}Use-Case Reports}{3}
-\contentsline {subsection}{\numberline {3.2}Supplementary Requirements}{3}
+\contentsline {paragraph}{Vorraussetzungen:}{3}
+\contentsline {paragraph}{Abh\IeC {\"a}ngigkeiten:}{3}
+\contentsline {section}{\numberline {3}Specific Requirements}{4}
+\contentsline {subsection}{\numberline {3.1}Use-Case Reports}{4}
+\contentsline {subsection}{\numberline {3.2}Supplementary Requirements}{4}
 \contentsline {section}{\numberline {4}Supporting Information}{4}

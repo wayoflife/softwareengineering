@@ -24,7 +24,7 @@
 \usepackage[usenames, dvipsnames]{color}
 \usepackage{listings}	% for code
 \usepackage{xcolor}
-%\usepackage{hyperref}  % auskommentieren um verlinkungen zu ermöglichen
+\usepackage{hyperref}  % auskommentieren um verlinkungen zu ermöglichen
 \lstset{language=Java}
 
 \input{./style.tex} %Stil des Dokuments festlegen
@@ -55,12 +55,16 @@ seinem Verwendungszweck. Hier werden alle Einschränkungen, Schnittstellen und W
 externen Plattformen beschrieben und erklärt. Die primäre Absicht des Dokuments ist es, eine Übersicht
 für Entwickler zu geben und eine Richtlinie für den Entwicklungsprozess darzustellen.
 
+Außerdem soll als Grundlage zu Bewertung dienen bei Abschluss des Projekts, ob alle gewünschten
+Funktionen umgesetzt werden konnten. Das Verhältnis von umgesetzten und nicht realisierten 
+Funktionen kann dabei als Erfolgsmaßstab angesehen werden.
+
 \subsection{Scope}
 
 “Social Funnel” ist eine Webanwendung, basierend auf bekannten und bewährten Sozialen Medien. Die
 Idee ist, dass die schiere Menge an Informationen aus Sozialen Medien nicht mehr überschaubar ist.
 “Social Funnel” zielt darauf ab, dieses Chaos zu bereinigen und eine einfache und nützliche Übersicht für
-neue Nachrichten, Ereignisse und Posts zu schaffen. Die unterstützen Platformen werden dabei in einen 
+neue Nachrichten, Ereignisse und Posts zu schaffen. Die unterstützen Plattformen werden dabei in einen 
 einzigen Nachrichtenfeed zusammengeführt und dieser mit verbesserten Werkzeugen für das
 Sortieren und Filtern ausgestattet.\\
  
@@ -85,33 +89,37 @@ Sortieren und Filtern ausgestattet.\\
 \begin{tabular}[h]{|c|c|}
   \hline
   Begriff   & Definition \\\hline
+  tbd     & To be determined \\\hline
+  n.a.    & Not applicable \\\hline
   User   & Person mit Internet-Anschluss und Accounts in einem oder \\ 
             & mehreren Sozialen Netzwerken\\\hline
   Admin & Person die User-Aktionen überwacht \\ 
   	  & und aufkommende Probleme löst \\\hline
   Entwickler & Person die das Programm entwickelt und Funktionen implementiert\\\hline
   Soziale Medien & Software die Menschen miteinander verbindet\\\hline
+  Newsfeed & Eine immer aktuelle Liste von Neuigkeiten in Form von Posts oder Nachrichten\\\hline
+  Post & Ein von einem User verfasster Beitrag in einem Sozialen Netzwerk beliebiger Form\\\hline
+  Account & Benutzerkonto eines Anwenders bei einem Dienstleister (Soziales Netzwerk)\\\hline
 \end{tabular}
 \end{center}
 
 \subsection{References}
 
 % Die bibliographie eben, alles quellenangaben
-%\bibliographystyle{plain}
-%\bibliography{bib}
-To be determined
+\bibliographystyle{plain}
+\bibliography{bib}
 
 \subsection{Overview}
 
 Das Dokument enthält ab dieser Stelle drei Kapitel und Anhänge. Das Zweite Kapitel beinhaltet eine
-Übersicht der Funktionen der Anwending, des Designs und den Interaktionen mit externen Plattformen.
+Übersicht der Funktionen der Anwendung, des Designs und den Interaktionen mit externen Plattformen.
 Weiterhin definiert und beschreibt das Kapitel die Einschränkungen des Systems.\\
 
 Das dritte Kapitel liefert die Requirements Specification in detaillierten Bedingungen und eine 
 Beschreibung der verschiedenen genutzten Schnittstellen.\\
 
 Das vierte Kapitel diskutiert unterstützenden Informationen über das Projekt und die angebundenen
-externen Platformen welche darin genutzt werden.
+externen Plattformen welche darin genutzt werden.
 
 \section{Overall Description}
 
@@ -124,12 +132,53 @@ Zielgruppe und genaue Instruktionen wie der erwartete Verwendungszweck der Anwen
 \begin{center}
 	\includegraphics[width=\textwidth]{./img/usecase_socialfunnel.jpg}
 \end{center}
-	
-To be determined
+
+\subsection{Product Perspective}
+
+To be determined - Produktausblick !?
+
+\subsection{Product Functions}
+
+Die erste Funktion des Produkts für jeden User ist die Registrierung. Ohne einen Account anzulegen gibt
+es keine Möglichkeit die Software zu benutzen, da es um zu schützende Daten geht und Zugriff für Dritte
+mit allen zur Verfügung stehenden Möglichkeiten verhindert werden soll. Dabei muss der Anwender ein 
+paar Daten von sich selbst sowie eine gültige Mailadresse angeben.\\
+
+Hat der Anwender ein Benutzerkonto erstellt kann er sich auf der Webseite mit seinem Benutzernamen und 
+dem dazu gehörenden Passwort einloggen. Dies führt ihn auf die Individuell gestaltbare Startseite.
+
+Um diese zu verändern kann er Accounts verschiedener Sozialer Medien hinzufügen und auswählen welche
+Inhalte er davon angezeigt bekommen möchte. \\
+
+User Interaktion selbst gibt es bei Social Funnel nicht. Es wird nicht darauf abgezielt ein eigenes Netzwerk zu
+erstellen, sondern lediglich bereits bestehende Plattformen sinnvoll zu bündeln. \\
+
+Der User kann beliebig unterstütze Plattformen hinzufügen oder entfernen, dabei auch mehrere von gleichen
+Anbietern. 
+
+Der so entstandene Newsfeed kann mit mehreren Werkzeugen und Filtern auf das vom Anwender gewünschte 
+Angebot zurecht geschnitten werden.
+
+Neben dem Empfangen von Nachrichten steht dem Anwender auch die Möglichkeit zur Verfügung selbst 
+neue Posts zu verfassen und diese über ein Formular in alle von ihm ausgewählten Plattformen gleichzeitig
+zu veröffentlichen.
+
+\subsection{User characteristics}
  
+Nutzer der Webseite haben im Allgemeinen mindestens einen Account bei einem großen sozialen Netzwerk,
+in der Regel jedoch bei mehreren wie z.B. Facebook, Twitter, Google+, Instagram, Wordpress, uvm.\\
+
+Um die Übersicht über alle Nachrichten aus diesen Plattformen zu halten müssen Personen unserer 
+Zielgruppe sich über Apps oder Webseiten in jede einzeln einloggen um ihre Nachrichten zu überprüfen.
+Social Funnel bietet dieser Personengruppe die 
+
+\subsection{Constraints}
+
+To be determined - Einschränkungen
+
 \subsection{Assumptions and Dependencies}
 
-\paragraph{Vorraussetzungen:} Für den gebrauch der Anwendung braucht der Nutzer einen Internetzugang, 
+\paragraph{Voraussetzungen:} Für den Gebrauch der Anwendung braucht der Nutzer einen Internetzugang, 
 sowie einen Account bei einem der Sozialen Netzwerke, die eingebunden werden.
 Auch muss er sich innerhalb der Webanwendung einmal in den gewünschten sozialen Netzwerken anmelden, 
 um diese über den Account der Web-Anwendung nutzen zu können.\\
@@ -137,20 +186,180 @@ um diese über den Account der Web-Anwendung nutzen zu können.\\
 \paragraph{Abhängigkeiten:} Die Anwendung funktioniert nur, wenn die Zielsysteme (Sozialen Netzwerke) funktionieren. 
 Sollte es auf einer der anderen Seiten Probleme geben, kann diese nicht angesprochen werden.\\
 
+\subsection{requirements subsets}
+
+to be determined
+
 \section{Specific Requirements}
 
-To be determined
+\subsection{Functionality}
 
-\subsection{Use-Case Reports}
+\subsubsection{Registrieren}
 
-To be determined
+Der Benutzer soll hierbei einen Account bei Social Funnel anlegen können. Dazu soll er seinen Namen,
+Geburtsdatum, ein Passwort und einen frei Wählbaren Benutzernamen angeben. Neben diesen angaben ist noch
+eine gültige Email-Adresse nötig zur Bestätigung der Registrierung und spätere Benachrichtigungen.
 
-\subsection{Supplementary Requirements}
+\subsubsection{Login}
 
-To be determined
+Mit den bei der Registrierung eingegebenen Daten kann der Benutzer sich auf die Seite einloggen.
+Dafür ist eine Kombination aus Mailadresse und Passwort notwendig.
+
+\subsubsection{Soziales Netzwerk hinzufügen}
+
+Hier kann durch eine simple Eingabemaske ein unterstütztes Netzwerk ausgewählt werden
+und zu den eigenen hinzugefügt werden.
+
+\subsubsection{Soziales Netzwerk ändern/entfernen}
+
+Über eine Liste können hier hinzugefügte Netzwerke verändert oder entfernt werden.
+
+\subsubsection{Bei sozialen Netzwerk registrieren}
+
+Mit einer unterstützenden Eingabemaske können hier von gewünschten Netzwerken die Registrierungsseiten
+aufgerufen werden und im Anschluss direkt zu den eingebundenen Seiten hinzugefügt werden.
+
+\subsubsection{Nachrichten Filtern}
+
+Mit Auswahl von erweiterbaren Filterkriterien lässt sich der persönliche Newsfeed (oder mehrere) individuell 
+anpassen.
+
+\subsubsection{Post verfassen}
+
+Mit einem Formular kann hier jede eingebundene Plattform angewählt werden und eine Nachricht so 
+zurecht geschnitte werden, damit sie gleichzeitig auf all diesen veröffentlich werden kann.
+
+\subsubsection{Userdaten verwalten}
+
+Hier kann der Anwender seine eigenen Daten aktualisieren und verändern, wie zb eine neue Mailadresse
+oder das ändern des Passworts
+
+\subsubsection{Premiumaccount kaufen}
+
+to be determined
+
+\subsubsection{Nachrichtenverlauf ansehen}
+
+to be determined
+
+\subsubsection{Werbung schalten}
+
+to be determined
+
+\subsubsection{Ereignis bewerben}
+
+to be determined
+
+\subsubsection{Nachrichten verschicken}
+
+to be determined
+
+\subsection{Usability}
+
+\subsubsection{Benutzeroberfläche}
+
+Diese soll möglichst einfach und schmal gehalten werden. Alle Inhalte der Webseite werden aus externen Quellen
+geliefert. Die Software soll lediglich als Rahmenprogramm für diese Plattformen dienen und eine leichte
+Bedienoberfläche zur Verfügung stellen. 
+
+Dabei soll die Nutzung intuitiv sein und simple Formulare für das hinzufügen und entfernen bereitgestellt werden.
+Die Auswahl für den anzuzeigenden Inhalt soll durch Checkboxen mit wenigen Clicks möglich sein und in Echtzeit
+aktualisiert werden.
+
+\subsection{Reliability}
+
+\subsubsection{Erreichbarkeit} 
+
+Die Webseite soll im Optimalfall eine Uptime von 24/7 vorweisen können. Ausfälle können jedoch leicht verkraftet
+werden, da für den Nutzer lediglich die von Social Funnel bereitgestellt Features fehlen, er allerdings auf den
+Webseiten der Netzwerke noch immer vollen Zugriff hat.
+
+Diese Ausfälle können durch technische Störungen oder Wartungsarbeiten ausgelöst werden. In beiden
+Fällen wird versucht die Dauer des Ausfalls auf ein Minimum zu reduzieren.
+
+\subsection{Performance}
+
+to be determined
+
+\subsubsection{Antwortzeit}
+
+Die Webseite soll maximal einen Ping von 500 ms unterstützen, es ist jedoch eine durchschnittliche Verbindung
+von unter 100 ms anzustreben um einen flüssigen Auftritt zu garantieren.
+
+\subsection{Supportability}
+
+to be determined
+
+\subsection{Design Constraints}
+
+\subsubsection{Spring}
+
+Spring ist eine Sammlung von Bibliotheken des Spring Projekts %\cite{spring}
+
+\subsubsection{Hibernate}
+
+Wird verwendet als Verbindung mit der Datenbank \cite{hibernate}
+
+\subsubsection{Vaadin}
+
+Wird als Framework zur Erstellung der Webseite verwendet %\cite{vaadin}
+
+\subsubsection{Git}
+
+Wird zur Versionsverwaltung der Software sowie der Dokumentation verwendet %\cite{git}
+
+\subsubsection{Lombok}
+
+Wird zum Einsparen von Code verwendet \cite{lombok}
+
+\subsubsection{Jenkins}
+
+\cite{jenkins}
+
+\subsubsection{Maven}
+
+\cite{maven}
+
+\subsection{On-line User Documentation and Help System Requirements}
+
+to be determined
+
+\subsection{Purchased Components}
+
+to be determined
+
+\subsection{Interfaces}
+
+\subsubsection{User Interfaces}
+
+to be determined
+
+\subsubsection{Hardware Interfaces}
+
+to be determined
+
+\subsubsection{Software Interfaces}
+
+to be determined
+
+\subsubsection{Communications Interfaces}
+
+to be determined
+
+\subsection{Licensing Requirements}
+
+to be determined
+
+\subsection{Legal, Copyright and other Notices}
+
+to be determined
+
+\subsection{Applicable Standards}
+
+to be determined
 
 \section{Supporting Information}
 
-To be determined
+to be determined
 
 \end{document}

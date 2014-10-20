@@ -13,30 +13,40 @@
 \contentsline {subsection}{\numberline {2.5}Constraints}{5}{subsection.2.5}
 \contentsline {subsection}{\numberline {2.6}Assumptions and Dependencies}{5}{subsection.2.6}
 \contentsline {paragraph}{Voraussetzungen:}{5}{section*.3}
-\contentsline {paragraph}{Abh\IeC {\"a}ngigkeiten:}{5}{section*.4}
+\contentsline {paragraph}{Abh\IeC {\"a}ngigkeiten:}{6}{section*.4}
 \contentsline {subsection}{\numberline {2.7}requirements subsets}{6}{subsection.2.7}
 \contentsline {section}{\numberline {3}Specific Requirements}{6}{section.3}
 \contentsline {subsection}{\numberline {3.1}Functionality}{6}{subsection.3.1}
-\contentsline {subsubsection}{\numberline {3.1.1}Registrieren}{6}{subsubsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.2}Login}{6}{subsubsection.3.1.2}
-\contentsline {subsubsection}{\numberline {3.1.3}Soziales Netzwerk hinzuf\IeC {\"u}gen}{6}{subsubsection.3.1.3}
-\contentsline {subsubsection}{\numberline {3.1.4}Soziales Netzwerk \IeC {\"a}ndern/entfernen}{6}{subsubsection.3.1.4}
-\contentsline {subsubsection}{\numberline {3.1.5}Bei sozialen Netzwerk registrieren}{6}{subsubsection.3.1.5}
-\contentsline {subsubsection}{\numberline {3.1.6}Nachrichten Filtern}{7}{subsubsection.3.1.6}
-\contentsline {subsubsection}{\numberline {3.1.7}Post verfassen}{7}{subsubsection.3.1.7}
-\contentsline {subsubsection}{\numberline {3.1.8}Userdaten verwalten}{7}{subsubsection.3.1.8}
-\contentsline {subsubsection}{\numberline {3.1.9}Premiumaccount kaufen}{7}{subsubsection.3.1.9}
-\contentsline {subsubsection}{\numberline {3.1.10}Nachrichtenverlauf ansehen}{7}{subsubsection.3.1.10}
-\contentsline {subsubsection}{\numberline {3.1.11}Werbung schalten}{7}{subsubsection.3.1.11}
-\contentsline {subsubsection}{\numberline {3.1.12}Ereignis bewerben}{7}{subsubsection.3.1.12}
-\contentsline {subsubsection}{\numberline {3.1.13}Nachrichten verschicken}{7}{subsubsection.3.1.13}
+\contentsline {subsubsection}{\numberline {3.1.1}User}{6}{subsubsection.3.1.1}
+\contentsline {paragraph}{Registrieren}{6}{section*.5}
+\contentsline {paragraph}{Login}{6}{section*.6}
+\contentsline {paragraph}{Soziales Netzwerk hinzuf\IeC {\"u}gen}{6}{section*.7}
+\contentsline {paragraph}{Soziales Netzwerk \IeC {\"a}ndern/entfernen}{6}{section*.8}
+\contentsline {paragraph}{Bei sozialen Netzwerk registrieren}{6}{section*.9}
+\contentsline {paragraph}{Nachrichten Filtern}{6}{section*.10}
+\contentsline {paragraph}{Nachrichten abschicken}{7}{section*.11}
+\contentsline {paragraph}{Soziale Netzwerke ausw\IeC {\"a}hlen}{7}{section*.12}
+\contentsline {paragraph}{Userdaten verwalten}{7}{section*.13}
+\contentsline {paragraph}{Premiumaccount kaufen}{7}{section*.14}
+\contentsline {paragraph}{Nachrichtenverlauf ansehen}{7}{section*.15}
+\contentsline {paragraph}{Werbung schalten}{7}{section*.16}
+\contentsline {paragraph}{Ereignis bewerben}{7}{section*.17}
+\contentsline {subsubsection}{\numberline {3.1.2}Administrator}{7}{subsubsection.3.1.2}
+\contentsline {paragraph}{Registrierungen akzeptieren}{7}{section*.18}
+\contentsline {paragraph}{Neue soziale Netzwerke}{7}{section*.19}
+\contentsline {paragraph}{Webseite updaten}{7}{section*.20}
+\contentsline {paragraph}{Posts \IeC {\"u}berwachen}{7}{section*.21}
+\contentsline {subsubsection}{\numberline {3.1.3}Webseite}{8}{subsubsection.3.1.3}
+\contentsline {paragraph}{Werbung schalten}{8}{section*.22}
+\contentsline {paragraph}{Benachrichtigungen senden}{8}{section*.23}
+\contentsline {paragraph}{Nachrichten k\IeC {\"u}rzen}{8}{section*.24}
 \contentsline {subsection}{\numberline {3.2}Usability}{8}{subsection.3.2}
 \contentsline {subsubsection}{\numberline {3.2.1}Benutzeroberfl\IeC {\"a}che}{8}{subsubsection.3.2.1}
 \contentsline {subsection}{\numberline {3.3}Reliability}{8}{subsection.3.3}
 \contentsline {subsubsection}{\numberline {3.3.1}Erreichbarkeit}{8}{subsubsection.3.3.1}
 \contentsline {subsection}{\numberline {3.4}Performance}{8}{subsection.3.4}
-\contentsline {subsubsection}{\numberline {3.4.1}Antwortzeit}{8}{subsubsection.3.4.1}
-\contentsline {subsection}{\numberline {3.5}Supportability}{8}{subsection.3.5}
+\contentsline {subsubsection}{\numberline {3.4.1}Antwortzeit}{9}{subsubsection.3.4.1}
+\contentsline {subsection}{\numberline {3.5}Supportability}{9}{subsection.3.5}
 \contentsline {subsection}{\numberline {3.6}Design Constraints}{9}{subsection.3.6}
 \contentsline {subsubsection}{\numberline {3.6.1}Spring}{9}{subsubsection.3.6.1}
 \contentsline {subsubsection}{\numberline {3.6.2}Hibernate}{9}{subsubsection.3.6.2}
@@ -45,8 +55,8 @@
 \contentsline {subsubsection}{\numberline {3.6.5}Lombok}{9}{subsubsection.3.6.5}
 \contentsline {subsubsection}{\numberline {3.6.6}Jenkins}{9}{subsubsection.3.6.6}
 \contentsline {subsubsection}{\numberline {3.6.7}Maven}{9}{subsubsection.3.6.7}
-\contentsline {subsection}{\numberline {3.7}On-line User Documentation and Help System Requirements}{9}{subsection.3.7}
-\contentsline {subsection}{\numberline {3.8}Purchased Components}{9}{subsection.3.8}
+\contentsline {subsection}{\numberline {3.7}On-line User Documentation and Help System Requirements}{10}{subsection.3.7}
+\contentsline {subsection}{\numberline {3.8}Purchased Components}{10}{subsection.3.8}
 \contentsline {subsection}{\numberline {3.9}Interfaces}{10}{subsection.3.9}
 \contentsline {subsubsection}{\numberline {3.9.1}User Interfaces}{10}{subsubsection.3.9.1}
 \contentsline {subsubsection}{\numberline {3.9.2}Hardware Interfaces}{10}{subsubsection.3.9.2}
@@ -55,4 +65,4 @@
 \contentsline {subsection}{\numberline {3.10}Licensing Requirements}{10}{subsection.3.10}
 \contentsline {subsection}{\numberline {3.11}Legal, Copyright and other Notices}{10}{subsection.3.11}
 \contentsline {subsection}{\numberline {3.12}Applicable Standards}{10}{subsection.3.12}
-\contentsline {section}{\numberline {4}Supporting Information}{10}{section.4}
+\contentsline {section}{\numberline {4}Supporting Information}{11}{section.4}

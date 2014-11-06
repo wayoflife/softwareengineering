@@ -8,9 +8,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(	features = { "src/" },
-					format = { "pretty",
-					"html:target/cucumber-html-report",
-					"junit:target/cucumber-junit-report/allcukes.xml" },
+					format = { "pretty"},
 					tags = { "@Runme" })
 
 public class Cukerunner {

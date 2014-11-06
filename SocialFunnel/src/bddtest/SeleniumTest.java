@@ -21,11 +21,8 @@ import org.openqa.selenium.safari.SafariDriver;
 public class SeleniumTest {
 
 	private WebDriver driver;
-
 	private String baseUrl;
-
 	private String browserName;
-
 	private String browserVersion;
 
 	public void setUp() throws Exception {
@@ -40,7 +37,7 @@ public class SeleniumTest {
 
 		// driver = new SafariDriver();
 
-		baseUrl = "http://www.dunelm-mill.com/";
+		baseUrl = "http://www.google.de/";
 
 		// note due to issue in wordpress the URL does not display properly
 		// above. The URL should end with a forward slash, then quote marks,
@@ -56,7 +53,7 @@ public class SeleniumTest {
 
 		browserVersion = caps.getVersion();
 
-		System.out.println("Automated test run. We’re running on " + browserName + " " + browserVersion);
+		System.out.println("Automated test run. Weï¿½re running on " + browserName + " " + browserVersion);
 
 	}
 

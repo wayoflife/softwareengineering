@@ -1,16 +1,19 @@
 Feature: register
   
-  As a unregistered user
+  As an unregistered user
   I want to register an account
   so that I can use the website
 
+  @Runme
   Scenario: enter correct details and register
     Given I am not registered
     And I am on the "Registrieren" page
-    When I enter my "email" in the field "Emailadresse"
-    And I enter my "password" in the field "Passwort"
-    And I repeat my "password" in the field "Passwort wiederholen"
-    And I enter my "birthday" in the field "Geburtstag"
+    When I enter my "email@web.de" in the field "Email"
+    And I enter my "daniel" in the field "FirstName"
+    And I enter my "betsche" in the field "SecondName"
+    And I enter my "password" in the field "Password"
+    And I enter my "password" in the field "Password2"
+    And I enter my "22.05.1989" in the field "Geburtstag"
     And I accept the "Nutzungsbedingungen" by checking the checkbox
     And I press the "Registrieren" button
     Then my "userdata" will be created
@@ -20,11 +23,13 @@ Feature: register
   Scenario: enter correct details and register
     Given I am not registered
     And I am on the "Registrieren" page
-    When I enter my "email" in the field "Emailadresse"
-    And I enter my "password" in the field "Passwort"
-    And I repeat my "password" in the field "Passwort wiederholen"
-    And I enter my "birthday" in the field "Geburtstag"
+    When I enter my "email@web.de" in the field "Email"
+    And I enter my "daniel" in the field "FirstName"
+    And I enter my "betsche" in the field "SecondName"
+    And I enter my "password" in the field "Password"
+    And I enter my "password" in the field "Password2"
+    And I enter my "22.05.1989" in the field "Geburtstag"
     And I accept the "Nutzungsbedingungen" by checking the checkbox
     And I press the "Registrieren" button
     And one of them is wrong
-    Then I will receive and error message to check my input
+    Then I will receive an error message to check my input

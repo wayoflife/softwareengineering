@@ -1,10 +1,5 @@
 package cucumbertests;
 
-import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.By;
-
-import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -13,19 +8,13 @@ public class StepDefs {
 	private SeleniumTest script;
 
 	public void setUpWebDriver() throws Exception {
-
 		script = new SeleniumTest();
-
 		script.setUp();
-
 		script.goToHomePage();
-
 	}
 
 	public void tidyUp() {
-
 		script.tearDown();
-
 	}
 	
 	@Given("^I am not registered$")
@@ -39,8 +28,9 @@ public class StepDefs {
 	}
 
 	@When("^I enter my \"(.*?)\" in the field \"(.*?)\"$")
-	public void i_enter_my_in_the_field(String arg1, String arg2) throws Throwable {
-		script.enterpassword();
+	public void i_enter_my_in_the_field(String entry, String field) throws Throwable {
+		script.enterInto(entry,field);
+//		script.enterpassword();
 	}
 
 	@When("^I repeat my \"(.*?)\" in the field \"(.*?)\"$")
@@ -54,8 +44,8 @@ public class StepDefs {
 	}
 
 	@When("^I press the \"(.*?)\" button$")
-	public void i_press_the_button(String arg1) throws Throwable {
-		script.clickRegister();
+	public void i_press_the_button(String button) throws Throwable {
+		script.clickButton(button);
 	}
 
 	@Then("^my \"(.*?)\" will be created$")
@@ -70,12 +60,12 @@ public class StepDefs {
 
 	@Then("^I will be logged into the website$")
 	public void i_will_be_logged_into_the_website() throws Throwable {
-		script.onPage("login");
+//		script.onPage("login");
 	}
 
 	@When("^one of them is wrong$")
 	public void one_of_them_is_wrong() throws Throwable {
-		script.wrongEntry();
+		script.enterInto("falsch", "Password2");
 	}
 
 	@Then("^I will receive and error message to check my input$")
@@ -142,5 +132,10 @@ public class StepDefs {
 	public void the_page_title_is_as_expected() throws Throwable {
 		script.goToHomePage();
 		script.titleAsExpected();
+	}
+	
+	@Then("^I will receive an error message to check my input$")
+	public void i_will_receive_an_error_message_to_check_my_input() throws Throwable {
+	    script.errorMessage();
 	}
 }

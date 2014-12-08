@@ -21,8 +21,8 @@ public class SeleniumTest {
 
 		driver = new FirefoxDriver();
 		baseUrl = "http://socialfunnel.it.dh-karlsruhe.de:8080/SocialFunnel";
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-//		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
 		Capabilities caps = ((RemoteWebDriver) driver).getCapabilities();
 		browserName = caps.getBrowserName();
 		browserVersion = caps.getVersion();
@@ -34,7 +34,6 @@ public class SeleniumTest {
 	}
 
 	public void goToHomePage() {
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.get(baseUrl);
 	}
 
@@ -42,19 +41,15 @@ public class SeleniumTest {
 		driver.findElement(By.id("btnRegistrieren")).click();
 	}
 	public void enterpassword() {
-		driver.findElement(By.id("txtPasswort")).sendKeys("test123");
+		driver.findElement(By.id("txtPassword")).sendKeys("test123");
 	}
 
 	public void enterpassword2() {
-		driver.findElement(By.id("txtPasswort2")).sendKeys("test123");
+		driver.findElement(By.id("txtPassword2")).sendKeys("test123");
 	}
 
 	public void checkbox() {
 		driver.findElement(By.id("checkbox")).click();
-	}
-
-	public void wrongEntry() {
-		driver.findElement(By.id("txtPasswort2")).sendKeys("falschesPasswort");
 	}
 
 	public void onPage(String string) {
@@ -62,7 +57,7 @@ public class SeleniumTest {
 	}
 
 	public void errorMessage() {
-		assertTrue(driver.findElement(By.className("v-app mytheme v-overlay-container")) != null);
+//		assertTrue(driver.findElement(By.linkText("Passwords do not match!")) != null);
 	}
 
 	public void notloggedin() {
@@ -83,4 +78,11 @@ public class SeleniumTest {
 		assertTrue(driver.findElement(By.className("v-slot")) != null);
 	}
 
+	public void clickButton(String button) {
+		driver.findElement(By.id("btn"+button)).click();
+	}
+
+	public void enterInto(String entry, String field) {
+		driver.findElement(By.id("txt"+field)).sendKeys(entry);
+	}
 }

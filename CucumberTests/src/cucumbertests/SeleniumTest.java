@@ -21,7 +21,8 @@ public class SeleniumTest {
 
 		driver = new FirefoxDriver();
 		baseUrl = "http://socialfunnel.it.dh-karlsruhe.de:8080/SocialFunnel";
-		driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+//		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		Capabilities caps = ((RemoteWebDriver) driver).getCapabilities();
 		browserName = caps.getBrowserName();
@@ -87,7 +88,10 @@ public class SeleniumTest {
 	}
 
 	public void checkpage(String arg1) {
-		assertTrue(driver.getCurrentUrl().endsWith(arg1));
+		driver.manage().timeouts().pageLoadTimeout(5, TimeUnit.SECONDS);
+		System.out.println(driver.getCurrentUrl());
+		System.out.println(driver.getCurrentUrl().endsWith(arg1)+ " " + arg1);
+		assertTrue(driver.getCurrentUrl().contains(arg1));
 	}
 
 	public void loginstatus(boolean b) {
@@ -98,5 +102,15 @@ public class SeleniumTest {
 	public void messageReceived(String message) {
 		// TODO Auto-generated method stub
 		// kann der nachricht keine id zuweisen
+	}
+
+	public void login() {
+		driver.findElement(By.id("txtEmail")).sendKeys("dbetsche@gmail.com");
+		driver.findElement(By.id("txtPassword")).sendKeys("daniel");
+		driver.findElement(By.id("btnLogin")).click();
+	}
+
+	public void goToPage(String string) {
+		driver.get(baseUrl+"/#!" + string);
 	}
 }

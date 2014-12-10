@@ -8,7 +8,7 @@ Feature: register
   Scenario: enter correct details and register
     Given I am not registered
     And I am on the "Registrieren" page
-    When I enter "email@web.de" in the field "Email"
+    When I enter "test@gmail.com" in the field "Email"
     And I enter "daniel" in the field "FirstName"
     And I enter "betsche" in the field "SecondName"
     And I enter "password" in the field "Password"
@@ -22,7 +22,7 @@ Feature: register
   Scenario: enter incorrect details and fail to register
     Given I am not registered
     And I am on the "Registrieren" page
-    When I enter "email@web.de" in the field "Email"
+    When I enter "test@gmail.com" in the field "Email"
     And I enter "daniel" in the field "FirstName"
     And I enter "betsche" in the field "SecondName"
     And I enter "password" in the field "Password"

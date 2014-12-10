@@ -42,12 +42,24 @@ public class StepDefs {
 		setUpWebDriver();
 		if("Registrieren".equals(arg1)) {
 			script.clickRegister();
-			script.checkpage("register");		
+//			script.checkpage("register");		
 		}
 		if("Login".equals(arg1)) {
-			script.clickRegister();
-			script.checkpage("login");		
+			script.goToPage("login");
+//			script.checkpage("login");		
 		}
+	}
+	
+	@Given("^I am logged in$")
+	public void i_am_logged_in() throws Throwable {
+		setUpWebDriver();
+		script.login();
+	}
+
+	@Given("^I go to \"(.*?)\"$")
+	public void i_go_to(String arg1) throws Throwable {
+		script.goToPage("mynetworks");
+//	    if("MeineNetzwerke".equals(arg1)) script.goToPage("mynetworks");
 	}
 
 	@When("^I enter \"(.*?)\" in the field \"(.*?)\"$")
@@ -64,13 +76,13 @@ public class StepDefs {
 	public void i_press_the_button(String button) throws Throwable {
 		script.clickButton(button);
 	}
-
-	@Then("^I will receive and email$")
-	public void i_will_receive_an_email() throws Throwable {
-		//kann man nicht testen
+	
+	@Then("^new Network will be saved$")
+	public void new_Network_will_be_saved() throws Throwable {
+	    // hier passiert nix
 	}
 
-	@Then("^I will receive a \"(.*?)\" message$")
+	@Then("^I receive a \"(.*?)\" message$")
 	public void i_will_receive_a_message(String message) throws Throwable {
 		script.messageReceived(message);
 	}
@@ -78,5 +90,10 @@ public class StepDefs {
 	@Then("^the page title is as expected$")
 	public void the_page_title_is_as_expected() throws Throwable {
 		script.titleAsExpected();
+	}
+	
+	@Then("^I am now on the \"(.*?)\" page")
+	public void then_i_am_on_the_page(String page) throws Throwable {
+		script.checkpage(page);
 	}
 }

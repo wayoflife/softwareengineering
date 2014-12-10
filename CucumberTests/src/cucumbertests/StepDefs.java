@@ -70,9 +70,9 @@ public class StepDefs {
 		//kann man nicht testen
 	}
 
-	@Then("^I will receive an error message$")
-	public void i_will_receive_and_error_message() throws Throwable {
-		script.errorMessage();
+	@Then("^I will receive a \"(.*?)\" message$")
+	public void i_will_receive_a_message(String message) throws Throwable {
+		script.messageReceived(message);
 	}
 	
 	@Then("^the page title is as expected$")

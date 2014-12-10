@@ -94,4 +94,9 @@ public class SeleniumTest {
 		// TODO Auto-generated method stub
 		// testen ob eingeloggt
 	}
+
+	public void messageReceived(String message) {
+		// TODO Auto-generated method stub
+		// kann der nachricht keine id zuweisen
+	}
 }

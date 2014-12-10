@@ -9,7 +9,7 @@ Feature: login
     And I am on the "Login" page
     When I enter "dbetsche@gmail.com" in the field "Email"
     And I enter "daniel" in the field "Password"
-    And I press the "Anmelden" button
+    And I press the "login" button
     Then I am on the "Main" page
 
   Scenario: enter correct details and login
@@ -17,5 +17,5 @@ Feature: login
     And I am on the "Login" page
     When I enter "dbetsche@gmail.com" in the field "Email"
     And I enter "falsch" in the field "Password"
-    And I press the "Anmelden" button
+    And I press the "login" button
     And I receive a "error" message

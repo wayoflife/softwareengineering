@@ -85,4 +85,13 @@ public class SeleniumTest {
 	public void enterInto(String entry, String field) {
 		driver.findElement(By.id("txt"+field)).sendKeys(entry);
 	}
+
+	public void checkpage(String arg1) {
+		assertTrue(driver.getCurrentUrl().endsWith(arg1));
+	}
+
+	public void loginstatus(boolean b) {
+		// TODO Auto-generated method stub
+		// testen ob eingeloggt
+	}
 }

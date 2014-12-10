@@ -6,17 +6,16 @@ Feature: login
 
   Scenario: enter correct details and login
     Given I am not logged in
-    When I enter my "email" in the field "Emailadresse"
-    And I enter my "password" in the field "Passwort"
+    And I am on the "Login" page
+    When I enter "dbetsche@gmail.com" in the field "Email"
+    And I enter "daniel" in the field "Password"
     And I press the "Anmelden" button
-    And both are stored in the ldap-system
-    Then my "userdata" will be loaded
-    And I am still on the Page
+    Then I am on the "Main" page
 
-  Scenario: enter invalid details and login
+  Scenario: enter correct details and login
     Given I am not logged in
-    When I enter my "email" in the field "Emailadresse"
-    And I enter my "password" in the field "Passwort"
+    And I am on the "Login" page
+    When I enter "dbetsche@gmail.com" in the field "Email"
+    And I enter "falsch" in the field "Password"
     And I press the "Anmelden" button
-    And one of them is wrong
-    Then I will receive and error message to check my input
+    And I receive a "error" message

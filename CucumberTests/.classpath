@@ -11,15 +11,15 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/dev/cucumber_selenium_jars/cucumber-core-1.1.8.jar" sourcepath="C:/Users/daniel/.m2/repository/info/cukes/cucumber-core/1.1.8/cucumber-core-1.1.8-sources.jar"/>
-	<classpathentry kind="lib" path="C:/dev/cucumber_selenium_jars/cucumber-html-0.2.3.jar"/>
-	<classpathentry kind="lib" path="C:/dev/cucumber_selenium_jars/cucumber-java-1.1.8.jar"/>
-	<classpathentry kind="lib" path="C:/dev/cucumber_selenium_jars/cucumber-junit-1.1.8.jar"/>
-	<classpathentry kind="lib" path="C:/dev/cucumber_selenium_jars/cucumber-jvm-deps-1.0.3.jar"/>
-	<classpathentry kind="lib" path="C:/dev/cucumber_selenium_jars/gherkin-2.12.2.jar"/>
-	<classpathentry kind="lib" path="C:/dev/cucumber_selenium_jars/gherkin-jvm-deps-1.0.2.jar"/>
-	<classpathentry kind="lib" path="C:/dev/cucumber_selenium_jars/jchronic-0.2.6.jar"/>
-	<classpathentry kind="lib" path="C:/dev/cucumber_selenium_jars/junit-4.10.jar"/>
-	<classpathentry kind="lib" path="C:/dev/cucumber_selenium_jars/selenium-server-standalone-2.43.1.jar"/>
+	<classpathentry kind="lib" path="lib/cucumber-core-1.1.8.jar"/>
+	<classpathentry kind="lib" path="lib/cucumber-html-0.2.3.jar"/>
+	<classpathentry kind="lib" path="lib/cucumber-java-1.1.8.jar"/>
+	<classpathentry kind="lib" path="lib/cucumber-junit-1.1.8.jar"/>
+	<classpathentry kind="lib" path="lib/cucumber-jvm-deps-1.0.3.jar"/>
+	<classpathentry kind="lib" path="lib/gherkin-2.12.2.jar"/>
+	<classpathentry kind="lib" path="lib/gherkin-jvm-deps-1.0.2.jar"/>
+	<classpathentry kind="lib" path="lib/jchronic-0.2.6.jar"/>
+	<classpathentry kind="lib" path="lib/junit-4.10.jar"/>
+	<classpathentry kind="lib" path="lib/selenium-server-standalone-2.43.1.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
